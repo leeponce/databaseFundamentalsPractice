@@ -11,7 +11,6 @@ SELECT first_name, last_name
 FROM employees
 WHERE department = ‘shipping’
 4) Write a SELECT DISTINCT Query for retrieving student column from Transcript table 
-
 SELECT DISTINCT Student
 	FROM table_Transcript
 5) Write SQL statement to sort the results from the previous example in descending order
