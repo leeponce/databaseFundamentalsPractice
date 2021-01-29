@@ -1,0 +1,32 @@
+--Practice DDL
+
+--Create database for DB fundamentals practice
+CREATE DATABASE dbPractice;
+USE dbPractice;
+
+--Create table
+CREATE TABLE cardBase
+(	cardNumber varchar(20),
+	cardFamily varchar(10),
+	creditLimit float,
+	custID varchar(10));
+
+--Validate table
+SELECT *
+FROM cardBase;
+
+--Alter table column
+ALTER TABLE cardBase
+ALTER COLUMN cardNumber varchar(19);
+
+--Alter table, add column
+ALTER TABLE cardBase
+ADD accountID int;
+
+--Validate table
+SELECT *
+FROM cardBase;
+
+--Alter table, drop column
+ALTER TABLE cardBase
+DROP COLUMN accountID;
